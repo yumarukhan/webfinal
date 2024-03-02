@@ -1,0 +1,135 @@
+/* Base Page Styling */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
+  background-color: #f4f4f4; /* Soft background color */
+  margin: 0;
+  padding: 8px;
+  color: #333; /* Professional text color */
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #ffffff; /* Professional deep blue */
+  color: rgb(32, 32, 32);
+  text-align: start;
+  font-size: 20px;
+  padding: 10px 20px; /* Optimized padding */
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgb(32, 32, 32); /* Ensuring high contrast for readability */
+}
+
+nav a:hover {
+  color: #313131; /* Soft hover effect */
+}
+
+/* Footer Styling */
+footer {
+   /* Dark color for contrast */
+  color: rgb(29, 29, 29);
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 90%;
+}
+
+/* Main Content and Form Styling */
+#create-post-form-container, form, .posts, #edit-form {
+  max-width: 800px; /* Unified width for main content */
+  margin: 20px auto; /* Centering */
+  padding: 20px;
+  background-color: white; /* Clean background */
+  border-radius: 5px; /* Subtle rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Input and Button Styling */
+input[type="text"], input[type="email"], input[type="password"], select, #edit-form input {
+  padding: 12px;
+  margin: 8px 0; /* Consistent margin */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Modern rounded corners */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+input[type="file"]{
+  margin-bottom: 20px;
+}
+button[type="submit"] {
+  background-color: #333333; /* Green for actions */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* Smooth opacity transition for feedback */
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* Post Styling for Clean Layout */
+.posts .post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.post-info {
+  padding: 20px;
+  border-radius: 4px; /* Consistent with form styling */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Softer shadow for text containers */
+  width: auto; /* Adjust based on content */
+}
+
+.post-info img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px; /* Reduced margin */
+  border-radius: 4px; /* Rounded corners for images */
+}
+
+/* Adjusting Gallery Layout */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.images img {
+  margin-bottom: 12px;
+  width: calc(50% - 10px); /* Adjusting for 2-column layout */
+  border-radius: 4px; /* Consistency in design */
+}
+
+/* Edit Form Consistency */
+#edit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#edit-form input, #edit-form button[type="submit"] {
+  margin: 8px 0; /* Unified spacing */
+}
+
+@media screen and (max-width: 768px) {
+  .posts .post {
+      flex-direction: column;
+  }
+
+  .images img {
+      width: 100%; /* Full width for smaller screens */
+  }
+}

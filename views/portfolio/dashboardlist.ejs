@@ -1,0 +1,36 @@
+
+<div class="post">
+    <div class="post-info">
+   <h4><%= post.titleenglish %></h4>
+<h4><%= post.titlerussian %></h4>
+<p><%= post.descriptionenglish %></p>
+<p><%= post.descriptionrussian %></p>
+<p><%= post.date %></p>
+<div class="images"><% post.images.forEach(photo =>{ %>
+    <img src="..<%= photo%>" alt="<%= photo%>">
+<%})%></div>
+
+<form action="/delete" method="POST">
+    <input type="hidden" name="id" value="<%= post._id %>">
+    <button type="submit">Delete</button>
+</form>
+<button id="open-edit-button" onclick="showEditForm()">Edit</button>
+</div>
+<div id="edit-form" >
+    <form action="/edit" method="POST" enctype="multipart/form-data" >
+        <input type="hidden" name="editid" value="<%= post._id %>">
+        <label for="titleenglish">Title in English</label>
+        <input type="text" name="titleenglish" value="<%= post.titleenglish %>">
+        <label for="titlerussian">Title in Russian</label>
+        <input type="text" name="titlerussian" value="<%= post.titlerussian %>">
+        <label for="descriptionenglish">Description in English</label>
+        <input type="text" name="descriptionenglish" value="<%= post.descriptionenglish %>">
+        <label for="descriptionrussian">Description in Russian</label>
+        <input type="text" name="descriptionrussian" value="<%= post.descriptionrussian %>">
+        <input type="file" name="editimages" id="editimages" multiple accept="image/*" >
+        <button type="submit">Submit edition</button>
+        <button type="button" id="cancel-edit-form">Cancel</button>
+    </form>
+</div> 
+
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/2b40017a14.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/public/login.css">
+</head>
+
+<body>
+<div id="form-holder" >
+    
+    <form action="/login" method="POST" >
+        
+            <label for="email" class="mb-1">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+        
+        
+            <label for="password" class="mb-1">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+        
+        <button type="submit" >Login</button>
+    </form>
+    <a href="/register">Don't have an account? Register</a>
+</div>
+
+
+</body>
+<footer>
+    <div>
+        <h6>© 2024 <a href="https://github.com/gybratyy" target="_blank">
+                <i class="fa-brands fa-github"></i> </a></h6>
+
+    </div>
+</footer>
+</html>

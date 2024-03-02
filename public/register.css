@@ -1,0 +1,84 @@
+/* Professional and Experienced Software Engineer Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Soft background for a polished look */
+    color: #333; /* Classic text color for readability */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333333; /* Deep, professional blue */
+    font-weight: 400;
+}
+
+/* Structured Form Styling for Professionalism */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #ddd; /* Subtle border for a sharp look */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Refined shadow for depth */
+}
+
+/* Label and Input Styles for Expert Appearance */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333333; /* Matching professional blue */
+    font-weight: 600; /* Slightly bolder labels for emphasis */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #333333; /* Highlighted border color on focus */
+}
+
+/* Enhanced Submit Button for a Confident Action */
+button[type="submit"] {
+    background-color: #333333; /* Confident, professional blue */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for clear action */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #333333; /* Darker shade for interactive feedback */
+}
+
+/* Footer - Polished and Professional */
+footer {
+    text-align: center;
+   /* Clean, unobtrusive background */
+    color: #313131; /* Professional blue for consistency */
+    padding: 20px;
+    position: relative;
+    width: 100%;
+     /* Subtle border for a defined edge */
+}

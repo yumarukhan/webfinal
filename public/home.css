@@ -1,0 +1,70 @@
+/* Navigation Styling */
+nav {
+    color: rgb(34, 34, 34);
+    text-align: start;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+nav a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(34, 34, 34); /* Keeps links readable and integrated */
+}
+
+nav a:hover {
+    color: #333333; /* A vibrant color for hover to add interest */
+}
+
+/* Post Styling */
+.post {
+    margin: 20px auto; /* Center posts for better focus */
+    padding: 20px;
+    border: none; /* Removing border for a cleaner look */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softening shadow for subtlety */
+    width: 400px;
+    background-color: #ffffff; /* Adds a clean background to posts */
+}
+
+.post img {
+    width: 100%; /* Full width within the post container for responsiveness */
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 5px; /* Adds consistency with post styling */
+}
+
+/* Images Gallery Styling */
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0; /* Adds spacing around the gallery for visual separation */
+}
+
+.images img {
+    margin-bottom: 10px; /* Ensures spacing between rows of images */
+    width: calc(50% - 10px); /* Adjusts width for 2 images per row with spacing */
+    border-radius: 5px; /* Consistent rounded edges */
+}
+
+/* Posts Container */
+.posts {
+    display: flex;
+    justify-content: space-around; /* Ensures even spacing with better alignment */
+    flex-wrap: wrap;
+    margin-top: 20px; /* Adds spacing above the posts for visual clarity */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    color: rgb(34, 34, 34); /* Improves readability */
+    padding: 20px;
+    bottom: 0;
+    width: 90%;
+    border-top: 2px solid #ddd; /* Adds subtle separation from the content */
+}

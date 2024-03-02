@@ -1,0 +1,75 @@
+/* Enhanced General Form Styling for Professionalism */
+form {
+  width: 400px; /* Adjusted width for better spacing */
+  margin: 50px auto; /* Centered with more vertical space */
+  padding: 40px; /* Increased padding for a spacious layout */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More subtle shadow for depth */
+  background: #FFFFFF; /* Pure white background for contrast */
+}
+
+/* Labels and Inputs - Enhanced for Clarity and Professionalism */
+label {
+  display: block;
+  margin-bottom: 1px; /* Increased spacing for clarity */
+  color: #333333; /* Dark, professional color */
+  font-size: 16px; /* Larger font size for readability */
+  font-weight: bold; /* Bold font weight for emphasis */
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px; /* Enhanced padding for comfort */
+  margin-bottom: 20px; /* Increased spacing for a clean look */
+  border: 1px solid #BCCED9; /* Lighter, sophisticated border color */
+  border-radius: 5px; /* Subtly rounded corners for a modern feel */
+  box-sizing: border-box;
+  background-color: #F7F9FA; /* Soft background color for inputs */
+  font-size: 14px; /* Appropriate font size for legibility */
+}
+
+/* Submit Button - Refined for Professional Interaction */
+button[type="submit"] {
+  width: 100%; /* Full-width button for emphasis */
+  background-color: #333333; /* Deep, impactful blue */
+  color: white;
+  padding: 15px; /* More padding for a prominent button */
+  border: none;
+  border-radius: 5px; /* Consistent rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Larger font for visibility */
+  font-weight: bold; /* Bold for a strong call to action */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for interaction */
+}
+
+
+
+/* Form Links - Subtle and Professional */
+a {
+  display: inline-block; /* Allows for better spacing and alignment */
+  margin-top: 20px; /* Space from button */
+  color: #333333; /* Matching the button color for consistency */
+  font-size: 14px; /* Clear, legible size */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Footer Styles - Elevated for a Cohesive Look */
+footer {
+  text-align: center;
+  background-color: #F7F9FA; /* Light, neutral background for a clean base */
+  color: #333; /* Professional text color */
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ 
+}
+
+#form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for centering */
+}

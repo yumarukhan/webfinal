@@ -1,0 +1,13 @@
+
+<div class="post" ><% if (user.language === 'english') { %>
+    <h4><%= post.titleenglish %></h4>
+    <p><%= post.descriptionenglish %></p>
+<% } else if (user.language === 'russian') { %>
+    <h2><%= post.titlerussian %></h2>
+    <p><%= post.descriptionrussian %></p>
+<% } %>
+    <div class="images" >
+<% post.images.forEach(photo =>{ %>
+    <img src="..<%= photo%>" alt="<%= photo%>">
+<%})%></div>
+</div>

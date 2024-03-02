@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://kit.fontawesome.com/2b40017a14.js" crossorigin="anonymous"></script>
+    
+   <link rel="stylesheet" href="/public/register.css">
+</head>
+
+<body>
+<h1>Register</h1>
+<form action="/register" method="POST" >
+    <div class="col"> <input type="text" name="username" placeholder="Userame" required >
+        <input type="email" name="email" placeholder="Email" required >
+        <input type="password" name="password" placeholder="Password" required >
+        <input type="password" name="passwordConfirm" placeholder="Confirm Password" required ></div>
+    <div class="col"> <input type="text" name="country" placeholder="Country" required >
+        <input type="text" name="city" placeholder="City" required >
+        <input type="number" name="age" placeholder="Age" required >
+        <label for="language">Language:</label>
+        <select name="language" id="language" required >
+            <option value="russian">Russian</option>
+            <option value="english">English</option>
+        </select></div>
+   
+   
+    <button type="submit" >Register</button >
+</form>
+<footer>
+    <div >
+        <h6>© 2024 <a href="https://github.com/gybratyy" target="_blank" >
+                <i class="fa-brands fa-github"></i> </a></h6>
+
+    </div>
+</footer>
+
+</body>
+
+</html>

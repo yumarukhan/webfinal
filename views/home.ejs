@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/2b40017a14.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/public/home.css">
+</head>
+
+<body><%- include('./partials/navbar.ejs', {user:user})%> <h3>Welcome, <%= user.username %>!</h3>
+    <p>Glad to see you back. Explore what's new today!</p>
+<main>
+    
+
+   
+
+   <div class="posts">
+    <% if (posts) { %>
+        <% posts.forEach(post => { %>
+            <%- include('./portfolio/list.ejs', { post: post, user: user }) %>
+        <% }) %>
+    <% } %></div>
+    
+</main>
+
+
+
+</body>
+<footer>
+    <div >
+        <h6 >© 2024 <a href="https://github.com/gybratyy" target="_blank" >
+                <i class="fa-brands fa-github"></i> </a></h6>
+
+    </div>
+</footer>
+</html>

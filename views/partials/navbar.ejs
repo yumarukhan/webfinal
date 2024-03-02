@@ -1,0 +1,13 @@
+<nav >
+
+
+<a href="/home">Home</a>
+<% if (user && user.role === 'admin') { %>
+        <a href="/dashboard">Admin Dashboard</a>
+        
+    <% } %>
+  <a href="/logout">Log Out</a>
+
+
+   
+</nav>
